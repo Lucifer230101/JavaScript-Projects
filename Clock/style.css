@@ -1,0 +1,100 @@
+/* styling overall elements of our file */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+/* styling the body contents so that everything is 
+displayed in center */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #212121;
+}
+
+/* keeping the containers position relative so as to 
+style the further elements with respect to this element
+ */
+.container {
+  position: relative;
+}
+
+/*this style enable us to have the circular shape of the clock and
+the color for clock, clock border and clock shadow */
+.clock {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*this code enable us to style the blocks in which numbers\
+are placed so we are able to rotate them inside the clock*/
+.clock span {
+  position: absolute;
+  transform: rotate(calc(30deg * var(--i)));
+  inset: 12px;
+  text-align: center;
+}
+
+/*this code enable us to target styling the numbers 
+specifically*/
+.clock span b {
+  transform: rotate(calc(-30deg * var(--i)));
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+/*this code enables us to style and create the clock center*/
+.clock::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 2;
+}
+
+/*this code enables us to style the clock hands position*/
+.hand {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/*this code enables us to style the clock hands and the 
+hands*/
+.hand i {
+  position: absolute;
+  background-color: var(--clr);
+  width: 4px;
+  height: var(--h);
+  border-radius: 8px;
+}
+
+.digital{
+    position: absolute;
+    /* top: 10vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-width: 30vw;
+    top: 50vh;
+    left: -2vw;
+}
+
+.digital b{
+    font-size: 1.3rem;
+    color: var(--clrs);
+}
