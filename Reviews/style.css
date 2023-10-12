@@ -1,0 +1,75 @@
+main{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title h2{
+    font-weight: bold;
+    margin: 1vh;
+}
+
+.underline{
+    margin: 0 auto;
+    height: 0.5vh;
+    width: 10vw;
+    background-color: #187bcd;
+}
+
+.review{
+    margin: 6vh;
+    width: 40%;
+    z-index: 1;
+    box-shadow: 0.2rem 0.2rem 1rem;
+}
+
+.img-container img{
+    width: 30%;
+    padding-top: 2vh;
+}
+
+.review h4{
+    margin-top: 1vh;
+    margin-bottom: 0.2vh;
+}
+
+.review #job{
+    color: #187bcd;
+}
+
+.review p{
+    width: 80%;
+    margin: 1vh auto;
+}
+
+.button-container{
+    height: 5vh;
+    color: #187bcd;
+}
+
+.button-container .prev-btn{
+    border: none;
+    height:3vh;
+    color: #187bcd;
+    background-color: transparent;
+}
+
+.button-container .next-btn{
+    border: none;
+    height:3vh;
+    color: #187bcd;
+    background-color: transparent;
+}
+
+.random-btn{
+    color: #187bcd;
+    border: 1px solid #187bcd;
+    border-radius: 6px;
+    margin-bottom: 3vh;
+}
